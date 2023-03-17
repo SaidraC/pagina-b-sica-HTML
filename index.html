@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página - Módulo I - Primeiros Passos com HTML</title>
+</head>
+<body>
+    <h1 id="begin">Módulo 1 - Primeiros Passos com HTML</h1>
+    <hr />
+
+    <h2>Índice</h2>
+    <ul>
+        <li><a href="#history">História dos computadores</a></li>
+        <li><a href="#clients">O que são <i>Clients</i>?</a></li>
+        <li><a href="#servers">O que são <i>Servers</i>?</a></li>
+        <li><a href="#programmingLeng">O que são <i>Liguagens de Programação</i>?</a></li>
+        <li><a href="#structure">Como é uma estrutura básica de um HTML?</a></li>
+        <li><a href="#tags"><i>Tags</i> HTML</a></li>
+        <li><a href="#lists">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
+        <li><a href="#reference">Links de referências</a></li>
+    </ul>
+
+    <h2 id="history">História dos computadores</h2>
+    <small><a href="#begin">(Voltar ao início)</a></small>
+    <p>
+         <strong>A história dos computadores remonta ao século XIX</strong>, quando foram criados os primeiros dispositivos mecânicos capazes de realizar cálculos matemáticos simples. O mais conhecido desses dispositivos é a <strong>Máquina de Diferenças</strong>, criada pelo matemático inglês <i><u><strong>Charles Babbage</strong></u></i> <strong>em 1822.</strong>
+    </p>
+    <p>
+        <strong>No final do século XIX e início do século XX</strong>, surgiram as primeiras máquinas calculadoras elétricas, que utilizavam relés eletromagnéticos para realizar cálculos mais complexos.
+    </p>
+    <p>
+        <strong>Durante a Segunda Guerra Mundial</strong>, os computadores eletrônicos começaram a ser desenvolvidos para fins militares, como o <a href="https://pt.wikipedia.org/wiki/ENIAC"> <abbr title="Electronic Numerical Integrator and Computer"><strong>ENIAC</abbr></a>, criado nos Estados Unidos em 1945</strong>, e o <strong><u>Colossus</u>, desenvolvido na Grã-Bretanha para quebrar códigos nazistas</strong>.
+    </p>
+    <p>
+        <strong>Nos anos 1950</strong>, os computadores foram se tornando menores e mais acessíveis, com a introdução de circuitos integrados e outros avanços tecnológicos. Nessa época, surgiram os primeiros sistemas operacionais, linguagens de programação e aplicativos comerciais.
+    </p>
+    <p>
+        <strong>A década de 1960</strong> marcou o surgimento dos <strong>Mainframes</strong>, grandes computadores usados principalmente por empresas e governos para processar grandes quantidades de dados. A <abbr title="International Business Machines Corporation">IBM</abbr> dominava o mercado dos mainframes na época.
+    </p>
+    <p>
+        <strong>Nos anos 1970</strong>, surgiram os computadores pessoais, como o <strong><u></u>Altair 8800</strong> e o <strong><u></u>Apple II</strong>, que popularizaram o uso dos computadores nas residências e pequenas empresas.
+    </p>
+    <p>
+        <strong>A década de 1980</strong> foi marcada pela popularização dos <abbr title="Personal Computers">PCs</abbr>, com a <strong>introdução do <u>IBM PC</u> em 1981</strong> e a criação da <strong><u></u>Microsoft</strong>  e da <strong><u></u>Apple</strong>.
+    </p>
+    <p>
+        <strong>Nos anos 1990</strong>, a internet e a <abbr title="World Wide Web"><u>WWW</u></abbr> revolucionaram o mundo dos computadores, transformando a maneira como as pessoas se comunicam, trabalham e se divertem.
+    </p>
+
+    <h3>Surgimento da internet</h3>
+    <small><a href="#begin">(Voltar ao início)</a></small>
+    <p>
+        <strong>A internet teve seu surgimento na década de 1960</strong>, como um projeto do <mark>Departamento de Defesa dos Estados Unidos</mark>, conhecido como <abbr title="Advanced Research Projects Agency Network">ARPANET</abbr>. O objetivo principal era criar uma rede de comunicação que fosse descentralizada e resistente a falhas, capaz de manter a comunicação mesmo em caso de um ataque nuclear.
+    </p>
+    <p>
+        <strong>Em 1989, o cientista britânico <i>Tim Berners-Lee</i> propôs a criação da <abbr title="World Wide Web">WWW</abbr></strong>, que permitiria a interconexão de documentos em hipertexto e a criação de páginas na internet. Ele desenvolveu o protocolo <abbr title="Hypertext Transfer Protocol"><u>HTTP</u></abbr> e a linguagem de marcação <abbr title="Hypertext Markup Language"><u>HTML</u></abbr> para viabilizar o acesso à informação na internet de forma mais fácil e intuitiva.
+    </p>
+    <p>
+        <strong>A partir da década de 1990</strong>, com o desenvolvimento de tecnologias como os navegadores web e a popularização do acesso à internet, a rede se expandiu rapidamente e se tornou um importante meio de comunicação e interação social, além de uma plataforma para comércio, entretenimento, educação, pesquisa e muitas outras áreas. Hoje em dia, a internet está presente em praticamente todos os aspectos da vida moderna e continua a evoluir e se transformar constantemente.
+    </p>
+
+    <blockquote cite="Ceruzzi, P. E. (2010). Computing: A concise history. MIT Press.">
+        <i>"A história dos computadores é uma história de mudança tecnológica rápida e constante, de inovações dramáticas e avanços incrementais, de revoluções e evoluções que transformaram a maneira como os humanos pensam, trabalham, se comunicam e vivem" (Ceruzzi, 2010).</i>
+    </blockquote>
+
+    <h2 id="clients">O que são <i>Clients</i>?</h2>
+    <small><a href="#begin">(Voltar ao início)</a></small>
+    <p>
+        <strong>Clients</strong> são dispositivos de rede, como computadores, smartphones e tablets, que solicitam e consomem serviços de servidores e outros dispositivos na rede. 
+    </p>
+    <p>
+        Um exemplo comum de client é o <strong>navegador web</strong>, que permite que os usuários acessem sites e serviços na internet. O navegador envia solicitações de conteúdo (como páginas da web) para os servidores que hospedam esses conteúdos e exibe as respostas aos usuários. Alguns dos navegadores mais populares incluem o <strong>Google Chrome</strong>, <strong>Mozilla Firefox</strong> e <del>Internet Explorer</del><strong>Microsoft Edge</strong>.
+    </p>
+
+    <h2 id="servers">O que são <i>Servers</i>?</h2>
+    <small><a href="#begin">(Voltar ao início)</a></small>
+    <p>
+        <strong><i>Servers</i></strong> são dispositivos de rede que fornecem serviços ou recursos para <strong>clients na rede</strong>. Eles são responsáveis por atender solicitações de clientes e fornecer acesso a serviços como <strong>arquivos, e-mails, sites, bancos de dados e outros recursos</strong>. Os servidores são projetados para serem dispositivos poderosos e confiáveis, capazes de atender a muitos clientes simultaneamente.
+    </p>
+
+    <h2 id="programmingLeng">O que são Liguagens de Programação?</h2>
+    <small><a href="#begin">(Voltar ao início)</a></small>
+    <p>
+        <strong>Linguagens de programação</strong> são conjuntos de regras, símbolos e instruções usadas para criar programas de computador. Elas permitem que os programadores escrevam instruções que um computador possa entender e executar, possibilitando a criação de aplicativos, jogos, softwares, sistemas operacionais e outras ferramentas de computação. Algumas linguagens de programação comuns incluem <strong><i>C</i></strong>, <strong><i>C++</i></strong>, <strong><i>Java</i></strong>, <strong><i>Python</i></strong>, <strong><i>JavaScript</i></strong>, <strong><i>PHP</i></strong>, <strong><i>Ruby</i></strong>, <strong><i>Swift</i></strong>, entre outras. 
+    </p>
+
+    <h3>Server-Side</h3>
+    <small><a href="#begin">(Voltar ao início)</a></small>
+    <p>
+        <strong>Programação server-side</strong> refere-se à execução de códigos em um servidor para gerar conteúdo dinâmico ou responder a solicitações de usuários. Esses códigos são executados no servidor antes de enviar uma resposta ao cliente (geralmente um navegador da web), o que permite que os desenvolvedores criem aplicativos web mais complexos e interativos.
+    </p>
+    <p>
+        A programação server-side geralmente envolve o uso de linguagens de programação como <strong><i>PHP</i></strong>, <strong><i>Python</i></strong>, <strong><i>Ruby</i></strong> ou <strong><i>Java</i></strong>, que são executadas em um servidor web. Essas linguagens são usadas para criar aplicativos web dinâmicos, como sites de comércio eletrônico, plataformas de blogs, redes sociais e outros sistemas interativos.
+    </p>
+
+    <h3>Client-Side</h3>
+    <small><a href="#begin">(Voltar ao início)</a></small>
+    <p>
+        <strong>Programação client-side</strong> refere-se à execução de códigos em um navegador da web ou em um dispositivo do cliente (como um smartphone ou tablet) para interagir com o usuário e modificar o conteúdo exibido na página sem a necessidade de carregar uma nova página. <strong>Esses códigos são executados no computador do usuário e não no servidor</strong>, o que permite que os desenvolvedores criem aplicativos web interativos sem sobrecarregar o servidor.
+    </p>
+    <p>
+        É geralmente realizada usando linguagens de marcação como <strong><i>HTML</i></strong> e <strong><i>CSS</i></strong>, bem como linguagens de script como <strong><i>JavaScript</i></strong>. Essas linguagens são usadas para criar elementos interativos na página, como formulários, botões, menus e outros componentes da interface do usuário. Os códigos <i>client-side</i> também podem ser usados para validar dados inseridos pelo usuário, modificar o conteúdo da página dinamicamente e interagir com serviços de terceiros, como <abbr title="Application Programming Interface">API</abbr>s de redes sociais ou serviços de armazenamento em nuvem.
+    </p>
+    <h3>HTML não é Liguagem de Programação</h3>
+    <small><a href="#begin">(Voltar ao início)</a></small>
+    <p>
+        <abbr title="Hypertext Markup Language"><strong>HTML</strong></abbr> é uma linguagem de marcação e não uma linguagem de programação. Ao contrário das linguagens de programação, que são usadas para criar aplicativos e sistemas complexos, <strong>a função principal do HTML é descrever a estrutura e o conteúdo de uma página da web.</strong>
+    </p>
+    <p>
+        O <abbr title="Hypertext Markup Language"><strong>HTML</strong></abbr> é usado para definir os elementos de uma página, como títulos, parágrafos, links, imagens e outros elementos da interface do usuário. Os navegadores da web interpretam esses elementos e os exibem visualmente na página da web.
+    </p>
+
+    <h2 id="structure">Como é uma estrutura básica de um HTML?</h2>
+    <small><a href="#begin">(Voltar ao início)</a></small>
+    <p>
+        <strong>A estrutura básica do HTML</strong> consiste em uma série de elementos que são utilizados para definir a estrutura e o conteúdo de uma página web. A seguir, uma descrição resumida dos elementos básicos de uma página HTML:
+        <pre><code> 
+            &lt;html&gt;
+            &lt;head&gt;
+                &lt;title&gt;Título da Página&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                Conteúdo da página
+            &lt;/body&gt;
+            &lt;/html&gt;
+        </code></pre>
+        <ol>
+            <li>&lt;html&gt;: marca o início e o fim do documento HTML.</li>
+            <li>&lt;head&gt;: contém informações sobre o documento, como o título da página, o autor, entre outros metadados.</li>
+            <li>&lt;title&gt;: define o título da página que será exibido na barra de título do navegador.</li>
+            <li>&lt;body&gt;: define o corpo do documento HTML, que contém todo o conteúdo da página, incluindo textos, imagens, vídeos, links, formulários, entre outros elementos.</li>
+        </ol>
+    </p>
+    <p>
+        Em sua versão atual, o documento HTML 5 é composta por elementos já conhecidos, e com a adição de alguns outros:
+    </p>    
+    <pre><code> 
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+            &lt;title&gt;Título da Página&lt;/title&gt;
+            &lt;meta charset="UTF-8"&gt;
+            &lt;meta name="description" content="Descrição da Página"&gt;
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            Conteúdo da página
+        &lt;/body&gt;
+        &lt;/html&gt;
+    </code></pre>
+        <ol>
+            <li>O &lt;!DOCTYPE html&gt; define a versão do HTML a ser usada no documento.</li>
+            <li>A <i>tag</i> &lt;meta&gt; é usada para fornecer informações adicionais sobre a página, como a descrição da página, a codificação do texto e a configuração de visualização em dispositivos móveis.</li>
+        </ol>
+
+    <h2 id="tags"><i>Tags</i> HTML</h2>
+    <small><a href="#begin">(Voltar ao início)</a></small>
+    <p>
+        <strong><i>Tags</i> HTML são elementos que definem a estrutura e o conteúdo de uma página web.</strong> As <i>tags</i> são escritas em um formato de marcação e são interpretadas pelos navegadores da web para exibir o conteúdo da página. Cada <i>tag</i> é identificada por um nome cercado por colchetes angulares (&lt; e &gt;), que podem ou não conter atributos e valores que definem suas propriedades.    
+    </p>
+    <p>
+        Aqui estão alguns exemplos de <i>tags</i> HTML:
+        <ul>
+            <li><code>&lt;html&gt;</code>: Define o início do documento HTML.</li>
+            <li><code>&lt;head&gt;</code>: Define a seção de cabeçalho da página, que contém informações como o título, meta <i>tags</i> e outros elementos de configuração.</li>
+            <li><code>&lt;body&gt;</code>: Define a seção do corpo da página, que contém o conteúdo principal da página.</li>
+            <li><code>&lt;p&gt;</code>: Define um parágrafo de texto.</li>
+            <li><code>&lt;a&gt;</code>: Define um link para outra página ou recurso.</li>
+            <li><code>&lt;img&gt;</code>: Define uma imagem a ser exibida na página.</li>
+            <li><code>&lt;div&gt;</code>: Define uma seção genérica de conteúdo da página.</li>
+            <li><code>&lt;form&gt;</code>: Define um formulário para coletar dados do usuário.</li>
+            <li><code>&lt;input&gt;</code>: Define um campo de entrada de dados em um formulário.</li>
+        </ul>
+    
+        
+        Existem muitas outras <i>tags</i> HTML disponíveis, cada uma com sua própria finalidade e uso. Ao criar uma página web, é importante usar as <i>tags</i> apropriadas para definir a estrutura e o conteúdo da página de forma clara e organizada.
+    </p>
+    <h3>Atributos das <i>Tags</i></h3>
+    <small><a href="#begin">(Voltar ao início)</a></small>
+    <p>
+        <strong>Atributos de <i>tags</i> em HTML fornecem informações adicionais sobre um elemento e podem ser usados para modificar o comportamento ou a aparência desse elemento.</strong> Cada atributo é composto de um nome e um valor, separados por um sinal de igual (=) e envolvidos em aspas duplas ou simples.
+    </p>
+    <p>        
+        Aqui estão alguns exemplos de atributos comuns em <i>tags</i> HTML:
+
+        <ul>
+            <li><code>class</code>: Define uma classe CSS para o elemento.</li>
+            <li><code>id</code>: Define um identificador exclusivo para o elemento.</li>
+            <li><code>style</code>: Define um estilo CSS inline para o elemento.</li>
+            <li><code>src</code>: Define o local de origem de um arquivo de imagem ou outro recurso.</li>
+            <li><code>href</code>: Define o URL de destino de um link.</li>
+            <li><code>alt</code>: Define um texto alternativo para uma imagem.</li>
+            <li><code>title</code>: Define um título que aparece quando o cursor do mouse é colocado sobre o elemento.</li>
+            <li><code>target</code>: Define onde abrir o link quando clicado (por exemplo, em uma nova janela ou na mesma janela).</li>
+        </ul>  
+        
+        Cada <i>tag</i> HTML tem seu próprio conjunto de atributos que podem ser usados. Ao usar atributos, é importante verificar a documentação para garantir que você está usando-os corretamente e que eles são suportados pelos navegadores da web mais populares.
+    </p>
+    <h2 id="lists">Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
+    <small><a href="#begin">(Voltar ao início)</a></small>
+    <p>
+        <strong>As listas ordenadas e não ordenadas</strong> em HTML são elementos que permitem criar listas de itens dentro de uma página web. <strong>A diferença principal</strong> entre elas é que uma lista não ordenada não tem um número ou letra antes de cada item, enquanto uma lista ordenada apresenta cada item numerado ou com letras.
+    </p>
+    <p>
+        As listas não ordenadas são criadas com a <i>tag</i> <code>&lt;ul&gt;</code> e seus itens são representados pela <i>tag</i> <code>&lt;li&gt;</code>. Os itens são marcados com um ponto ou um símbolo de bullet antes do texto, mas não são numerados. Veja um exemplo:
+    </p>
+        
+    <pre>
+        <code>  
+        &lt;ul&gt;
+             &lt;li&gt;Item 1&lt;/li&gt;
+             &lt;li&gt;Item 2&lt;/li&gt;
+             &lt;li&gt;Item 3&lt;/li&gt;
+        &lt;/ul&gt;
+        </code>
+    </pre>
+    <p> 
+        Já as listas ordenadas são criadas com a <i>tag</i> <code>&lt;ol&gt;</code> e seus itens são representados também pela <i>tag</i> <code>&lt;li&gt;</code>. Os itens são numerados sequencialmente com algarismos arábicos, letras maiúsculas ou minúsculas, ou números romanos. Veja um exemplo:
+    </p>
+    <pre>
+        <code>  
+        &lt;ol&gt;
+             &lt;li&gt;Item 1&lt;/li&gt;
+             &lt;li&gt;Item 2&lt;/li&gt;
+             &lt;li&gt;Item 3&lt;/li&gt;
+        &lt;/ol&gt;
+        </code>
+    </pre>
+    <p>
+        A escolha entre lista ordenada ou não ordenada depende do conteúdo que se deseja apresentar e do efeito visual que se deseja produzir. Se os itens da lista têm uma ordem específica ou devem ser numerados, é melhor usar uma lista ordenada. Já se os itens não têm uma ordem definida, uma lista não ordenada pode ser mais apropriada.
+    </p>
+
+    <h2 id="reference">Links de referências</h2>
+    <small><a href="#begin">(Voltar ao início)</a></small>
+
+    <ul>
+        <li><a href="https://www.dio.me" target="_blank">http://dio.me</a></li>
+        <li><a href="https://www.w3schools.com" target="_blank">https://www.w3schools.com</a></li>
+        <li><a href="https://pt.wikipedia.org" target="_blank">https://pt.wikipedia.org</a></li>
+        <li><a href="https://www.youtube.com/watch?v=xajcV4lwY3Q&list=PLYjrJH3e_wDOA5mxhiMxE6yslcIzU5NkX" target="_blank">Manual do Mundo</a></li>
+    </ul>
+
+</body>
+</html>
